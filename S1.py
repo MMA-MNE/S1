@@ -206,8 +206,11 @@ else:
     fig_SR=  px.bar(df_new,x = 'StatesRegions', y= 'YEAR', labels={'YEAR':'Patients'},
                         title='Total Referral of States and Regions', color='StatesRegions', 
                              color_discrete_sequence=px.colors.diverging.balance)
+   fig_SR.update_layout(showlegend= False)
+   
 
     st.plotly_chart(fig_SR, use_container_width= True)
+
 
     #Tsps Data Frame
     df_tsp= df_si.groupby(['Tsp'], as_index= False).agg({'YEAR':'count'}).sort_values(
