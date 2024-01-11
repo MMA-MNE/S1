@@ -233,7 +233,7 @@ else:
     df_tsp.rename(columns={'YEAR':'Total Referral'},inplace=True)
 
     st.subheader('Township with Highest Referral')
-    st.dataframe(df_tsp, hide_index=True)
+    st.dataframe(df_tsp, hide_index=True, use_container_width= True)
     
 
     #Tsps Bar Plot
