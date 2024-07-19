@@ -7,7 +7,7 @@ import streamlit as st
 import seaborn as sns
 from matplotlib.ticker import MaxNLocator
 
-st.set_page_config(page_title="Scheme I referral", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="Scheme I referral", page_icon=":bow_and_arrow:", layout="wide")
 
 #Def for Age Group Columns
 def categorize_age_group(age):
@@ -173,7 +173,7 @@ df_si = df_si.query( "Type_of_Referral == @Referral_Type & StatesRegions == @Sta
 
 
 # ---- MAINPAGE ----
-st.title(":bar_chart: All Type of Scheme 1 Referral")
+st.title(":bow_and_arrow: All Type of Scheme 1 Referral")
 st.markdown("##")
 
 # Display DataFrame or a message if empty
