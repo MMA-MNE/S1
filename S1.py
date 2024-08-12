@@ -82,7 +82,7 @@ def load_data():
     df['Bacteriological'].replace('B','Bact_confirm', inplace = True)
     df['Bacteriological'].replace('C','Clinical_Dx', inplace = True)
     
-    #df['StatesRegions'].replace('NayPyitaw','Naypyitaw', inplace = True)   
+    df['StatesRegions'].replace('NayPyitaw','Naypyitaw', inplace = True)   
     
     df['TB_cat']= df['TBsite']+" "+ df['Bacteriological']
     df['age_group'] = df['Age'].apply(categorize_age_group)
